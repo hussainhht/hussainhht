@@ -6,9 +6,9 @@
 
 **From relational data to real-time interfaces.**
 
-I build web applications with Go, TypeScript, and JavaScript, with a focus on backend logic, connected user experiences, and practical problem-solving.
+I build applications with Go, TypeScript, and JavaScript, connecting backend logic, meaningful data, and thoughtful user interfaces.
 
-[Featured projects](#featured-projects) · [Engineering highlights](#engineering-highlights) · [GitHub activity](#github-activity) · [Connect](#connect-with-me)
+[Projects](#featured-projects) · [Engineering](#engineering-highlights) · [Activity](#github-activity) · [Connect](#connect-with-me)
 
 </div>
 
@@ -16,35 +16,34 @@ I build web applications with Go, TypeScript, and JavaScript, with a focus on ba
 
 ## About Me
 
-I'm Hussain, a computer science student working across backend and frontend development. My projects include social platforms, a bilingual coding study lab, relational data applications, TCP chat, and browser games.
+I'm Hussain, a computer science student working across backend and frontend development. My projects include social platforms, interactive dashboards, a bilingual coding study lab, database applications, TCP chat, and browser games.
 
-I enjoy working through the details that make an application function: how permissions are enforced, how data relationships are modeled, how live events reach users, and how the interface stays usable as features grow.
+I enjoy solving the problems behind an application: enforcing permissions, modeling relationships, managing live connections, and keeping interfaces usable as features grow.
 
-My recent work includes leading a four-person social-network project, with primary ownership of groups and events, the 3D presentation layer, settings, and cross-feature integration.
+My work includes leading a four-person social-network project, with primary ownership of groups and events, the 3D presentation layer, settings, and cross-feature integration.
 
 ## Tech Stack & Tools
-
-**Core languages**
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 
-Also used in coursework and other projects: **C, Java, Python, and SQL**.
-
 | Area | Technologies used |
 | :--- | :--- |
+| Languages | Go · TypeScript · JavaScript · PHP · SQL · C · Java · Python |
 | Frontend | React · Next.js · Vite · HTML · CSS · Tailwind CSS |
-| Backend | Go `net/http` · Node.js / Express · PHP / PDO · Python HTTP server |
+| Backend | Go `net/http` · Node.js / Express · PHP / PDO |
+| APIs & authentication | HTTP APIs · GraphQL · JWT · cookie-based sessions |
 | Databases | SQLite · MySQL · relational schemas · SQL migrations |
 | Real-time & networking | Gorilla WebSocket · TCP sockets · goroutines · mutexes |
-| Graphics & interaction | Three.js · React Three Fiber · GSAP practice |
-| Tools & testing | Git · Docker / Compose · npm · Go testing · Vitest |
+| Graphics & interaction | Three.js · React Three Fiber · custom SVG charts · Motion |
+| Tools & platforms | Git · Docker / Compose · npm · Netlify · GitHub Pages |
+| Testing & quality | Go testing · Vitest · ESLint |
 
 ## Featured Projects
 
-These are selected educational, personal, and team projects. Descriptions reflect the implementations in their public repositories; team ownership is identified where documented.
+Selected educational, personal, and team projects, with documented team ownership identified below.
 
 ### 01 · [Spacial Network](https://github.com/hussainhht/Spacial-Network)
 
@@ -53,7 +52,8 @@ A social platform combining privacy-aware communities with an interactive space-
 **Go · Next.js · React · TypeScript · SQLite · WebSocket · Three.js · Docker**
 
 - Public/private groups, invitations, approval-based membership, and event RSVPs, supported by backend authorization and transactional membership updates.
-- The team application includes private/group messaging and notifications; a persistent 3D scene connects planet selection with interface themes and reduced-motion support.
+- Private/group messaging and notifications.
+- A persistent 3D scene connects planet selection with interface themes and reduced-motion support.
 
 **My role:** Team lead; primary ownership of groups/events, space visuals, settings, and integration.
 
@@ -61,27 +61,45 @@ A social platform combining privacy-aware communities with an interactive space-
   <img src="https://raw.githubusercontent.com/hussainhht/Spacial-Network/main/docs/assets/readme/group-page.png" alt="Spacial Network group page with membership tabs and a space-themed interface" width="100%" />
 </a>
 
-### 02 · [Real-Time Forum](https://github.com/hussainhht/real-time-forum)
+### 02 · [Reboot Guild Hall](https://github.com/hussainhht/Reboot-Guild-Hall)
+
+A dark-fantasy dashboard that transforms Reboot01 profile data into a character sheet, project journey, and interactive statistics.
+
+**React · JavaScript · Vite · GraphQL · JWT · SVG · Motion · Netlify**
+
+- Reboot01 sign-in obtains a JWT for authenticated GraphQL requests. A service layer and profile hook fetch the current user, then run six related queries in parallel, with loading, error, and retry states.
+- Hand-built SVG visualizations display XP progression, monthly activity, project rankings, audit ratios, and skill radar charts using geometry computed in React components.
+- A responsive interface combines level-based character portraits, an interactive project journey, animated panels, and remembered audio preferences.
+
+[Live demo](https://hussainali7.netlify.app/) · [Architecture](https://github.com/hussainhht/Reboot-Guild-Hall#architecture)
+
+<sub>The demo is public; viewing profile data requires your own Reboot01 account.</sub>
+
+<a href="https://github.com/hussainhht/Reboot-Guild-Hall">
+  <img src="https://raw.githubusercontent.com/hussainhht/Reboot-Guild-Hall/main/docs/screenshots/dashboard-overview.webp" alt="Reboot Guild Hall dashboard with a character portrait, XP statistics, progression chart, and audit ratio" width="100%" />
+</a>
+
+### 03 · [Real-Time Forum](https://github.com/hussainhht/real-time-forum)
 
 A forum and messaging application served by a Go backend with a vanilla JavaScript SPA.
 
 **Go · SQLite · Gorilla WebSocket · JavaScript · HTML / CSS**
 
-- Cookie-based sessions and bcrypt password hashing; ownership checks for post and comment changes.
+- Cookie-based sessions and bcrypt password hashing, with ownership checks for post and comment changes.
 - Persisted private messages, presence updates, cursor-based history pagination, and client reconnection with exponential backoff.
 - A custom hash router and modular frontend features support navigation without a frontend framework.
 
-### 03 · [ITCS333 Midterm Lab](https://github.com/hussainhht/itcs333-study/tree/main/itcs333-midterm-lab)
+### 04 · [ITCS333 Midterm Lab](https://github.com/hussainhht/itcs333-study/tree/main/itcs333-midterm-lab)
 
 A local Arabic/English study application for learning HTML, CSS, and PHP through exercises and code execution.
 
 **React · TypeScript · Vite · Express · Monaco Editor · PHP CLI · i18next · Vitest**
 
-- A code editor with sandboxed HTML/CSS previews and actual PHP execution through a local backend, with filename validation, execution timeouts, and output limits.
-- Arabic/English switching with RTL/LTR layouts; browser-stored progress, rule-based exercise grading, and a timed mock exam.
+- A code editor with sandboxed HTML/CSS previews and PHP execution through a local backend, with filename validation, execution timeouts, and output limits.
+- Arabic/English switching with RTL/LTR layouts, browser-stored progress, rule-based exercise grading, and a timed mock exam.
 - Test suites cover translation completeness, grading, preview generation, and PHP runner behavior.
 
-### 04 · [Research Publication Tracker](https://github.com/hussainhht/DATABASE-MANAGEMENT-SYSTEMS-05)
+### 05 · [Research Publication Tracker](https://github.com/hussainhht/DATABASE-MANAGEMENT-SYSTEMS-05)
 
 A university database project for organizing researchers, publications, authorship, venues, and keywords.
 
@@ -90,43 +108,47 @@ A university database project for organizing researchers, publications, authorsh
 - Relational modeling with foreign keys, composite keys, and junction tables for authorship and publication keywords.
 - CRUD APIs and SQL reports using joins and aggregation, with browser views for data management and reporting.
 
-### 05 · [Shot Share](https://github.com/hussainhht/shot_share)
+### 06 · [Shot Share](https://github.com/hussainhht/shot_share)
 
 A PHP/MySQL course project for sharing posts and photos with a community.
 
 **PHP · PDO · MySQL · JavaScript · HTML / CSS**
 
 - Session-based login, password hashing, prepared SQL statements, and owner-controlled post deletion.
-- Image uploads, likes, comments, keyword search, and persisted interaction notifications, presented through a responsive light/dark interface.
+- Image uploads, likes, comments, keyword search, and persisted interaction notifications.
+- A responsive interface with light and dark themes.
 
-### 06 · [REBOOT Fighting Game](https://github.com/hussainhht/make-your-game)
+### 07 · [REBOOT Fighting Game](https://github.com/hussainhht/make-your-game)
 
-A browser fighting-game project with modular gameplay systems and sprite animation.
+A browser fighting game with modular gameplay systems and sprite animation.
 
 **JavaScript · HTML / CSS · Browser APIs**
 
 - A `requestAnimationFrame` engine separates updates from rendering and uses elapsed time for gameplay changes.
-- Fighter state, hitboxes, stamina, blocking, and timed escape mechanics are organized into separate systems, with story/tower modes and browser-stored tower progress.
+- Fighter state, hitboxes, stamina, blocking, and timed escape mechanics are organized into separate systems.
+- Story/tower modes and browser-stored tower progress.
 
-[Open live demo](https://hussainhht.github.io/make-your-game/docs/)
+[Live demo](https://hussainhht.github.io/make-your-game/docs/)
 
-### 07 · [Net-Cat TCP Chat](https://github.com/hussainhht/net-cat)
+### 08 · [Net-Cat TCP Chat](https://github.com/hussainhht/net-cat)
 
 A concurrent terminal chat server built as a Reboot Coding Institute project.
 
 **Go · TCP · Goroutines · Mutexes · gocui**
 
 - Multiple rooms with message broadcasting, in-memory history replay, and join/leave announcements.
-- A goroutine handles each connection; shared registries use mutexes, with chat commands and an experimental terminal administration interface.
+- A goroutine handles each connection, while shared registries use mutexes.
+- Chat commands and an experimental terminal administration interface.
 
-### 08 · [Tetris Optimizer](https://github.com/hussainhht/tetris-optimizer)
+### 09 · [Tetris Optimizer](https://github.com/hussainhht/tetris-optimizer)
 
 A command-line solver that packs tetrominoes into the smallest square found within its board-size limit.
 
 **Go · Backtracking · Input validation**
 
 - Validates block dimensions, allowed characters, piece size, connectivity, and separators before normalizing coordinates.
-- Starts from an area-based lower bound, tries increasing board sizes, and recursively places/removes pieces to find a non-overlapping arrangement.
+- Starts from an area-based lower bound and tries increasing board sizes.
+- Recursively places and removes pieces to find a non-overlapping arrangement.
 
 <details>
 <summary><b>More projects and collaborative work</b></summary>
@@ -140,20 +162,22 @@ A command-line solver that packs tetrominoes into the smallest square found with
 
 ## Engineering Highlights
 
-- **Business rules with data integrity:** Group membership transitions use SQL transactions and conditional updates to coordinate invitations, requests, and membership records.
-- **Application structure:** The social-network backend separates HTTP handlers, domain services, and repositories, with frontend features organized by domain.
-- **Networked application fundamentals:** My project work spans HTTP APIs, WebSocket messaging, and raw TCP connections, including connection lifecycle and shared-state coordination.
-- **Testing and usability:** The social network contains authorization and domain tests; the study lab tests grading and localization. The 3D interface includes reduced-motion behavior and an option to disable rendering.
+- **Data integrity:** Group membership transitions use SQL transactions and conditional updates to coordinate invitations, requests, and membership records.
+- **Application structure:** The social-network backend separates HTTP handlers, domain services, and repositories. Reboot Guild Hall separates API requests, data fetching, derived statistics, and presentation.
+- **Connected systems:** My projects span HTTP APIs, GraphQL queries, WebSocket messaging, and raw TCP connections, including connection lifecycle and shared-state coordination.
+- **Visualization fundamentals:** Reboot Guild Hall uses custom SVG charts with computed coordinates, polar geometry, and animated data shapes.
+- **Algorithmic problem-solving:** Tetris Optimizer combines strict input validation with recursive placement and an area-based search starting point.
+- **Testing and usability:** The social network contains authorization and domain tests; the study lab tests grading and localization. Interface work includes reduced-motion behavior, keyboard interaction, and responsive layouts.
 
 ## GitHub Activity
 
 [Public contribution activity](https://github.com/hussainhht?tab=overview) · [All public repositories](https://github.com/hussainhht?tab=repositories)
 
-Language breakdowns are available on each repository. GitHub activity and language percentages reflect the repositories GitHub counts, including coursework and collaborative work, and do not capture all development activity.
+Language breakdowns are available on each repository. GitHub activity and language percentages include coursework and collaborative work and do not capture all development activity.
 
 ## Currently Exploring
 
-Building on my recent social-network work, I'm deepening my understanding of Go service design, transactional workflows, and accessible 3D interfaces, alongside tests for authorization and event-driven behavior.
+My recent projects explore Go service design, transactional workflows, GraphQL data integration, custom SVG visualization, and accessible interactive interfaces.
 
 ## Connect With Me
 
