@@ -183,6 +183,12 @@ My recent projects explore Go service design, transactional workflows, real-time
 
 ## Connect With Me
 
+## Connect With Me
+
+Feel free to reach out about software development opportunities, project collaborations, or technical discussions.
+
+[![Email](https://img.shields.io/badge/Email-h.anwdry%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:h.anwdry@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-hussainhht-0A66C2?style=flat-square)](https://www.linkedin.com/in/hussainhht/)
 [![GitHub](https://img.shields.io/badge/GitHub-hussainhht-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/hussainhht)
 
 Explore the repositories above for source code, setup instructions, and project documentation.
