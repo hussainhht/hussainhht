@@ -32,9 +32,9 @@ My work includes leading a four-person social-network project, with primary owne
 | Area | Technologies used |
 | :--- | :--- |
 | Languages | Go · TypeScript · JavaScript · PHP · SQL · C · Java · Python |
-| Frontend | React · Next.js · Vite · HTML · CSS · Tailwind CSS |
+| Frontend | React · Next.js · Vite · HTML · CSS · Tailwind CSS · JavaScript ES modules |
 | Backend | Go `net/http` · Node.js / Express · PHP / PDO |
-| APIs & authentication | HTTP APIs · GraphQL · JWT · cookie-based sessions |
+| APIs & authentication | HTTP APIs · GraphQL · JWT · cookie-based sessions · bcrypt |
 | Databases | SQLite · MySQL · relational schemas · SQL migrations |
 | Real-time & networking | Gorilla WebSocket · TCP sockets · goroutines · mutexes |
 | Graphics & interaction | Three.js · React Three Fiber · custom SVG charts · Motion |
@@ -81,13 +81,23 @@ A dark-fantasy dashboard that transforms Reboot01 profile data into a character 
 
 ### 03 · [Real-Time Forum](https://github.com/hussainhht/real-time-forum)
 
-A forum and messaging application served by a Go backend with a vanilla JavaScript SPA.
+A single-page forum with live user presence and private messaging, built by a two-person team using Go and vanilla JavaScript.
 
-**Go · SQLite · Gorilla WebSocket · JavaScript · HTML / CSS**
+**Go · SQLite · Gorilla WebSocket · JavaScript ES Modules · HTML / CSS**
 
-- Cookie-based sessions and bcrypt password hashing, with ownership checks for post and comment changes.
-- Persisted private messages, presence updates, cursor-based history pagination, and client reconnection with exponential backoff.
-- A custom hash router and modular frontend features support navigation without a frontend framework.
+- HTTP handles authentication, posts, comments, message sending, and history; WebSocket events push private messages, presence changes, and registration updates to connected browsers.
+- Messages are persisted in SQLite before delivery. Cursor-based history loads older messages in batches of ten, while the chat interface preserves scroll position and shows live unread indicators.
+- Cookie-based sessions and bcrypt authentication support a hand-built SPA with hash routing, persistent navigation, and session-aware socket reconnection.
+
+**My role:** Developer alongside team leader **Nawraa Sayed**. My contributions include project foundations, registration validation and password hashing, message-history queries, initial messaging handlers and WebSocket integration, and much of the chat interface and history-loading behavior.
+
+[Architecture](https://github.com/hussainhht/real-time-forum#architecture) · [WebSocket design](https://github.com/hussainhht/real-time-forum#websocket-architecture) · [Team contributions](https://github.com/hussainhht/real-time-forum#team--contributions)
+
+<a href="https://github.com/hussainhht/real-time-forum">
+  <img src="https://raw.githubusercontent.com/hussainhht/real-time-forum/main/docs/screenshots/live-chat.png" alt="Two browser sessions showing a private message arriving live without a page refresh" width="100%" />
+</a>
+
+<sub>Live messaging between two browser sessions, using fictional demo accounts. The current implementation accepts messages only when the recipient is online.</sub>
 
 ### 04 · [ITCS333 Midterm Lab](https://github.com/hussainhht/itcs333-study/tree/main/itcs333-midterm-lab)
 
@@ -164,7 +174,8 @@ A command-line solver that packs tetrominoes into the smallest square found with
 
 - **Data integrity:** Group membership transitions use SQL transactions and conditional updates to coordinate invitations, requests, and membership records.
 - **Application structure:** The social-network backend separates HTTP handlers, domain services, and repositories. Reboot Guild Hall separates API requests, data fetching, derived statistics, and presentation.
-- **Connected systems:** My projects span HTTP APIs, GraphQL queries, WebSocket messaging, and raw TCP connections, including connection lifecycle and shared-state coordination.
+- **Real-time integration:** My forum work connects persisted message history with WebSocket-driven delivery and a browser-rendered chat interface, including cursor pagination and incremental UI updates.
+- **Connected systems:** My projects span HTTP APIs, GraphQL queries, WebSocket messaging, and raw TCP connections.
 - **Visualization fundamentals:** Reboot Guild Hall uses custom SVG charts with computed coordinates, polar geometry, and animated data shapes.
 - **Algorithmic problem-solving:** Tetris Optimizer combines strict input validation with recursive placement and an area-based search starting point.
 - **Testing and usability:** The social network contains authorization and domain tests; the study lab tests grading and localization. Interface work includes reduced-motion behavior, keyboard interaction, and responsive layouts.
@@ -177,7 +188,7 @@ Language breakdowns are available on each repository. GitHub activity and langua
 
 ## Currently Exploring
 
-My recent projects explore Go service design, transactional workflows, GraphQL data integration, custom SVG visualization, and accessible interactive interfaces.
+My recent projects explore Go service design, transactional workflows, real-time browser interfaces, GraphQL data integration, and custom SVG visualization.
 
 ## Connect With Me
 
