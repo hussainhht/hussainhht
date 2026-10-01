@@ -99,17 +99,8 @@ A single-page forum with live user presence and private messaging, built by a tw
 
 <sub>Live messaging between two browser sessions, using fictional demo accounts. The current implementation accepts messages only when the recipient is online.</sub>
 
-### 04 · [ITCS333 Midterm Lab](https://github.com/hussainhht/itcs333-study/tree/main/itcs333-midterm-lab)
 
-A local Arabic/English study application for learning HTML, CSS, and PHP through exercises and code execution.
-
-**React · TypeScript · Vite · Express · Monaco Editor · PHP CLI · i18next · Vitest**
-
-- A code editor with sandboxed HTML/CSS previews and PHP execution through a local backend, with filename validation, execution timeouts, and output limits.
-- Arabic/English switching with RTL/LTR layouts, browser-stored progress, rule-based exercise grading, and a timed mock exam.
-- Test suites cover translation completeness, grading, preview generation, and PHP runner behavior.
-
-### 05 · [Research Publication Tracker](https://github.com/hussainhht/DATABASE-MANAGEMENT-SYSTEMS-05)
+### 04 · [Research Publication Tracker](https://github.com/hussainhht/DATABASE-MANAGEMENT-SYSTEMS-05)
 
 A university database project for organizing researchers, publications, authorship, venues, and keywords.
 
@@ -118,7 +109,7 @@ A university database project for organizing researchers, publications, authorsh
 - Relational modeling with foreign keys, composite keys, and junction tables for authorship and publication keywords.
 - CRUD APIs and SQL reports using joins and aggregation, with browser views for data management and reporting.
 
-### 06 · [Shot Share](https://github.com/hussainhht/shot_share)
+### 05 · [Shot Share](https://github.com/hussainhht/shot_share)
 
 A PHP/MySQL course project for sharing posts and photos with a community.
 
@@ -128,7 +119,7 @@ A PHP/MySQL course project for sharing posts and photos with a community.
 - Image uploads, likes, comments, keyword search, and persisted interaction notifications.
 - A responsive interface with light and dark themes.
 
-### 07 · [REBOOT Fighting Game](https://github.com/hussainhht/make-your-game)
+### 06 · [REBOOT Fighting Game](https://github.com/hussainhht/make-your-game)
 
 A browser fighting game with modular gameplay systems and sprite animation.
 
@@ -140,7 +131,7 @@ A browser fighting game with modular gameplay systems and sprite animation.
 
 [Live demo](https://hussainhht.github.io/make-your-game/docs/)
 
-### 08 · [Net-Cat TCP Chat](https://github.com/hussainhht/net-cat)
+### 07 · [Net-Cat TCP Chat](https://github.com/hussainhht/net-cat)
 
 A concurrent terminal chat server built as a Reboot Coding Institute project.
 
@@ -150,7 +141,7 @@ A concurrent terminal chat server built as a Reboot Coding Institute project.
 - A goroutine handles each connection, while shared registries use mutexes.
 - Chat commands and an experimental terminal administration interface.
 
-### 09 · [Tetris Optimizer](https://github.com/hussainhht/tetris-optimizer)
+### 08 · [Tetris Optimizer](https://github.com/hussainhht/tetris-optimizer)
 
 A command-line solver that packs tetrominoes into the smallest square found within its board-size limit.
 
